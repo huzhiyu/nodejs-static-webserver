@@ -195,6 +195,7 @@ class StaticServer {
     }
 
     routeHandler(pathName, req, res) {
+        pathName = pathName.split('?').shift();
         fs.stat(pathName, (err, stat) => {
             if (!err) {
                 const requestedPath = url.parse(req.url).pathname;
