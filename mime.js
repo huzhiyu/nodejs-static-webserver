@@ -18,7 +18,12 @@ const mimeTypes = {
     "wav": "audio/x-wav",
     "wma": "audio/x-ms-wma",
     "wmv": "video/x-ms-wmv",
-    "xml": "text/xml"
+    "xml": "text/xml",
+    "woff": "application/x-woff",
+    "woff2": "application/x-woff2",
+    "tff": "application/x-font-truetype",
+    "otf": "application/x-font-opentype",
+    "eot": "application/vnd.ms-fontobject"
 };
 
 const lookup = (pathName) => {
